@@ -5,3 +5,5 @@
 // console.log(sumOne(...myArr));   // it spread the arr values like 2 3
 // console.log(sumOne(2,3));
 
+// rest operator
+
