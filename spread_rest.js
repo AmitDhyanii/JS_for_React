@@ -7,3 +7,7 @@
 
 // rest operator
 
+// function name(...a){
+//     return a;
+// }
+// console.log(name(1,2,3,4,5,6,7));
