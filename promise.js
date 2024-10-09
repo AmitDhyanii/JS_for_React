@@ -16,7 +16,7 @@ promiseOne.then(function(){
     console.log('Promise 1 resolved');
 });
 
-
+// 2nd promise
 new Promise(function(resolve, reject){
     setTimeout(function(){
         console.log('Async task 2 is completed');
@@ -25,4 +25,5 @@ new Promise(function(resolve, reject){
 }).then(function(){
     console.log('Promise 2 resolved');
 });
+
 
