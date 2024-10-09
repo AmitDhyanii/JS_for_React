@@ -26,4 +26,12 @@ new Promise(function(resolve, reject){
     console.log('Promise 2 resolved');
 });
 
+// 3rd promise
+new Promise(function(resolve, reject){
+    setTimeout(function(){
+        resolve({userName: "Amit", email: "dhyani66@gmail.com", password: "asdfghjkl"});
+    }, 1000);
+}).then(function(user){
+    console.log(user);
+});
 
