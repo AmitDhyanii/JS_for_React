@@ -35,3 +35,28 @@ new Promise(function(resolve, reject){
     console.log(user);
 });
 
+
+// 4th promise
+const promiseFour = new Promise(function(resolve, reject){
+    setTimeout(function(){
+        let error = false;
+        if(!error)
+        {
+            resolve({userName: "Amit", email: "dhyani66@gmail.com", password: "asdfghjkl"});
+        }
+        else
+        {
+            reject('Oops Something Went Wrong');
+        }
+    }, 1000);
+});
+promiseFour.then(function(user){
+    return user.userName;
+}).then(function(userName){
+    console.log(userName);
+}).catch(function(error){
+    console.log(error);
+}).finally(function(){
+    console.log("The Promise is either resolved or rejected");
+});
+
