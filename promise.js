@@ -60,3 +60,11 @@ promiseFour.then(function(user){
     console.log("The Promise is either resolved or rejected");
 });
 
+
+
+// Above example using API with .then 
+fetch('https://jsonplaceholder.typicode.com/users')
+.then( (response) => response.json() )
+.then( (data) => console.log(data))
+.catch( (error) => console.log(error));
+
