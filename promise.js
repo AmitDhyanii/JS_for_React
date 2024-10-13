@@ -68,3 +68,5 @@ fetch('https://jsonplaceholder.typicode.com/users')
 .then( (data) => console.log(data))
 .catch( (error) => console.log(error));
 
+// fetch goes in microtask queue/priority queue which is prior then callback queue
+// call stack >> microtask queue >> callback queue
